@@ -1,0 +1,10 @@
+<article class="collaborations">
+    <h3>Colaboraciones</h3>
+    <ul>
+        @for (collab of collaborationsService.collaborations; track collab.id) {
+            <li>
+            <a href={{collab.url}} target="_blank">{{ collab.text }}</a>
+            </li>
+        }
+    </ul>
+</article>

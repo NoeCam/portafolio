@@ -1,0 +1,19 @@
+<article class="projects">
+    <h3>Proyectos</h3>
+    <ul class="projects-list">
+      @for (project of projectService.projects; track project.id) {
+        <li>
+            <a href={{project.url}} target="_blank">{{ project.text }}</a>
+            <p>{{ project.description }}</p>
+            <ul>
+                @for (tech of project.technologist; track tech) {
+                    <li>
+                        <p>{{ tech }}</p>
+                    </li>
+                }
+            </ul>
+
+        </li>
+      }
+    </ul>
+  </article>
