@@ -1,6 +1,6 @@
 header {
-    justify-content: end;
-    color: #09d3b8;
+    justify-content: center;
+    background-color: #09d3b8;
 }
 
 h2 {
@@ -43,3 +43,4 @@ h2 {
         font-size: 5rem;
     }
 }
+

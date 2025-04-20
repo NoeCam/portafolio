@@ -1,17 +1,25 @@
 <article class="projects">
     <h3>Proyectos</h3>
-    <ul class="projects-list">
+    <ul class="projects-cards">
       @for (project of projectService.projects; track project.id) {
-        <li>
-            <a href={{project.url}} target="_blank">{{ project.text }}</a>
+        <li class="project-card">
+          <div class="carousel-container">
+            <div class="carousel">
+              <img src="{{project.img[0]}}" alt="{{ project.text }}" />
+              <img src="{{project.img[1]}}" alt="{{ project.text }}" />
+            </div>
+          </div>
+          <div class="project-info">
+            <a href={{project.url}} target="_blank"><h2>{{ project.text }}</h2></a>
             <p>{{ project.description }}</p>
-            <ul>
-                @for (tech of project.technologist; track tech) {
-                    <li>
-                        <p>{{ tech }}</p>
-                    </li>
+          </div>
+          <ul class="technologies-list">
+              @for (tech of project.technologist; track tech) {
+                  <li class="tech-card" [attr.data-tech]="tech">
+                      <img src="../../../assets/technologies/{{tech}}.svg" alt="{{tech}}" width="40" height="40" (error)="handleImageError($event, tech)"/>
+                  </li>
                 }
-            </ul>
+              </ul>
 
         </li>
       }
