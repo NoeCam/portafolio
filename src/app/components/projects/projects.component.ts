@@ -3,7 +3,6 @@ import { ProjectService } from '../../services/project.service';
 
 @Component({
   selector: 'app-projects',
-  imports: [],
   templateUrl: './projects.component.html',
   styleUrl: './projects.component.css'
 })

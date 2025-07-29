@@ -1,16 +1,163 @@
+/* Llaves animadas */
+.bracket {
+  display: inline-block;
+  font-size: inherit;
+  transition: transform 0.5s cubic-bezier(0.4,0,0.2,1), color 0.3s;
+}
+
+.bracket-open {
+  margin-right: 0;
+}
+
+.bracket-close {
+  margin-left: 0;
+  transform: translateX(-100rem);
+  opacity: 1;
+  animation: moveBracket 1.7s 0.7s forwards;
+}
+
+@keyframes moveBracket {
+  0% {
+    margin-left: 0;
+    transform: translateX(-100rem);
+    opacity: 1;
+  }
+  100% {
+    margin-left: 1.2rem;
+    transform: translateX(0rem);
+    opacity: 1;
+  }
+}
+
+.highlight span {
+  opacity: 0;
+  display: inline-block;
+  transform: translateY(20px);
+  animation: fadeInUp 0.4s forwards;
+}
+
+.highlight span:nth-child(1) { animation-delay: 1.4s; }
+.highlight span:nth-child(2) { animation-delay: 1.45s; }
+.highlight span:nth-child(3) { animation-delay: 1.5s; }
+.highlight span:nth-child(4) { animation-delay: 1.55s; }
+.highlight span:nth-child(5) { animation-delay: 1.6s; }
+.highlight span:nth-child(6) { animation-delay: 1.65s; }
+.highlight span:nth-child(7) { animation-delay: 1.7s; }
+.highlight span:nth-child(8) { animation-delay: 1.75s; }
+.highlight span:nth-child(9) { animation-delay: 1.8s; }
+.highlight span:nth-child(10) { animation-delay: 1.85s; }
+.highlight span:nth-child(11) { animation-delay: 1.9s; }
+.highlight span:nth-child(12) { animation-delay: 1.95s; }
+.highlight span:nth-child(13) { animation-delay: 2s; }
+.highlight span:nth-child(14) { animation-delay: 2.05s; }
+.highlight span:nth-child(15) { animation-delay: 2.1s; }
+.highlight span:nth-child(16) { animation-delay: 2.15s; }
+.highlight span:nth-child(17) { animation-delay: 2.2s; }
+.highlight span:nth-child(18) { animation-delay: 2.25s; }
+.highlight span:nth-child(19) { animation-delay: 2.3s; }
+.highlight span:nth-child(20) { animation-delay: 2.35s; }
+.highlight span:nth-child(21) { animation-delay: 2.4s; }
+.highlight span:nth-child(22) { animation-delay: 2.45s; }
+.highlight span:nth-child(23) { animation-delay: 2.5s; }
+.highlight span:nth-child(24) { animation-delay: 2.55s; }
+.highlight span:nth-child(25) { animation-delay: 2.6s; }
+.highlight span:nth-child(26) { animation-delay: 2.65s; }
+.highlight span:nth-child(27) { animation-delay: 2.7s; }
+.highlight span:nth-child(28) { animation-delay: 2.75s; }
+.highlight span:nth-child(29) { animation-delay: 2.8s; }
+.highlight span:nth-child(30) { animation-delay: 2.85s; }
+.highlight span:nth-child(31) { animation-delay: 2.9s; }
+.highlight span:nth-child(32) { animation-delay: 2.95s; }
+.highlight span:nth-child(33) { animation-delay: 3s; }
+.highlight span:nth-child(34) { animation-delay: 3.05s; }
+.highlight span:nth-child(35) { animation-delay: 3.1s; }
+.highlight span:nth-child(36) { animation-delay: 3.15s; }
+.highlight span:nth-child(37) { animation-delay: 3.2s; }
+.highlight span:nth-child(38) { animation-delay: 3.25s; }
+.highlight span:nth-child(39) { animation-delay: 3.3s; }
+.highlight span:nth-child(40) { animation-delay: 3.35s; }
+
 header {
     justify-content: center;
     background-color: #09d3b8;
+}
+
+h1 {
+    color:rgb(4, 4, 102);
 }
 
 h2 {
     font-family: "Carrois Gothic SC", sans-serif;
 }
 
+.highlight {
+    /* Para que los spans hijos estén en línea */
+    display: inline-block;
+    margin-left: 1rem;
+}
+
+.highlight span {
+    opacity: 0;
+    display: inline-block;
+    transform: translateY(20px);
+    animation: fadeInUp 0.4s forwards;
+}
+
+/* Animación de aparición */
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Delays incrementales para cada letra (hasta 40 letras, puedes ajustar según el texto) */
+.highlight span:nth-child(1) { animation-delay: 1.2s; }
+.highlight span:nth-child(2) { animation-delay: 1.25s; }
+.highlight span:nth-child(3) { animation-delay: 1.3s; }
+.highlight span:nth-child(4) { animation-delay: 1.35s; }
+.highlight span:nth-child(5) { animation-delay: 1.4s; }
+.highlight span:nth-child(6) { animation-delay: 1.45s; }
+.highlight span:nth-child(7) { animation-delay: 1.5s; }
+.highlight span:nth-child(8) { animation-delay: 1.55s; }
+.highlight span:nth-child(9) { animation-delay: 1.6s; }
+.highlight span:nth-child(10) { animation-delay: 1.65s; }
+.highlight span:nth-child(11) { animation-delay: 1.7s; }
+.highlight span:nth-child(12) { animation-delay: 1.75s; }
+.highlight span:nth-child(13) { animation-delay: 1.8s; }
+.highlight span:nth-child(14) { animation-delay: 1.85s; }
+.highlight span:nth-child(15) { animation-delay: 1.9s; }
+.highlight span:nth-child(16) { animation-delay: 1.95s; }
+.highlight span:nth-child(17) { animation-delay: 2s; }
+.highlight span:nth-child(18) { animation-delay: 2.05s; }
+.highlight span:nth-child(19) { animation-delay: 2.1s; }
+.highlight span:nth-child(20) { animation-delay: 2.15s; }
+.highlight span:nth-child(21) { animation-delay: 2.2s; }
+.highlight span:nth-child(22) { animation-delay: 2.25s; }
+.highlight span:nth-child(23) { animation-delay: 2.3s; }
+.highlight span:nth-child(24) { animation-delay: 2.35s; }
+.highlight span:nth-child(25) { animation-delay: 2.4s; }
+.highlight span:nth-child(26) { animation-delay: 2.45s; }
+.highlight span:nth-child(27) { animation-delay: 2.5s; }
+.highlight span:nth-child(28) { animation-delay: 2.55s; }
+.highlight span:nth-child(29) { animation-delay: 2.6s; }
+.highlight span:nth-child(30) { animation-delay: 2.65s; }
+.highlight span:nth-child(31) { animation-delay: 2.7s; }
+.highlight span:nth-child(32) { animation-delay: 2.75s; }
+.highlight span:nth-child(33) { animation-delay: 2.8s; }
+.highlight span:nth-child(34) { animation-delay: 2.85s; }
+.highlight span:nth-child(35) { animation-delay: 2.9s; }
+.highlight span:nth-child(36) { animation-delay: 2.95s; }
+.highlight span:nth-child(37) { animation-delay: 3s; }
+.highlight span:nth-child(38) { animation-delay: 3.05s; }
+.highlight span:nth-child(39) { animation-delay: 3.1s; }
+.highlight span:nth-child(40) { animation-delay: 3.15s; }
+
 @media (max-width: 640px) {
     h1 {
         font-size: 2rem;
         letter-spacing: 2.3px;
+        padding-left: 1.5rem;
     };
 
     h2{
@@ -22,6 +169,7 @@ h2 {
     h1 {
         font-size: 6.5rem;
         letter-spacing: 3px;
+        padding-left: 2rem;
     };
 
     h2 {
@@ -31,12 +179,13 @@ h2 {
 
 @media (width >= 1280px) { 
     header {
-        height: 100vh;
+        height: 70vh;
     };
 
     h1 {
         font-size: 10rem;
         letter-spacing: 12px;
+        padding-left: 3rem;
     };
 
     h2 {
