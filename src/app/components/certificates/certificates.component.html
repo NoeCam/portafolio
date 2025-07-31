@@ -1,0 +1,26 @@
+<article class="certificates">
+    <h3><img src="../../../assets/svg-titles/certificates.svg" alt="Coding Icon" width="40" height="40" />&nbsp; Cursos y certificados</h3>
+    <ul class="certificate-cards">
+      @for (certificate of certificatesService.certificates; track certificate.id) {
+        <li class="certificate-card">
+            <div class="carousel-container">
+              <div class="carousel">
+                <!-- <img src="{{education.img[0]}}" alt="{{ education.text }}" />
+                <img src="{{education.img[1]}}" alt="{{ education.text }}" /> -->
+              </div>
+            </div>
+            <div class="certificate">
+              <h4>{{ certificate.text }}</h4>
+              <h5>{{ certificate.description }}</h5>
+            </div>
+            <!-- <ul class="technologies-list">
+              @for (tech of education.technologist; track tech) {
+                  <li class="tech-card" [attr.data-tech]="tech">
+                      <img src="../../../assets/technologies/{{tech}}.svg" alt="{{tech}}" width="40" height="40" (error)="handleImageError($event, tech)"/>
+                  </li>
+                }
+            </ul> -->
+        </li>
+      }
+    </ul>
+  </article>

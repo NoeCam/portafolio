@@ -1,9 +1,9 @@
 <article class="collaborations">
-    <h3><img src="assets/svg-titles/collaborations.svg" alt="Colaboraciones" width="25" height="25"/>&nbsp; Colaboraciones</h3>
+    <h3><img src="assets/svg-titles/collaborations.svg" alt="Colaboraciones" width="40" height="40"/>&nbsp; Colaboraciones</h3>
     <ul>
         @for (collab of collaborationsService.collaborations; track collab.id) {
             <li>
-            <a href={{collab.url}} target="_blank">{{ collab.text }}</a>
+            <a href={{collab.url}} target="_blank" class="underline-animate">{{ collab.text }}</a>
             </li>
         }
     </ul>

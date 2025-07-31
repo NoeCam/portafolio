@@ -1,0 +1,28 @@
+<article class="education">
+    <h3><img src="../../../assets/svg-titles/studies.svg" alt="Coding Icon" width="40" height="40" />&nbsp; Educación</h3>
+    <ul class="education-cards">
+      @for (education of educationService.educations; track education.id) {
+        <li class="education-card">
+          <a href={{education.url}} target="_blank">
+            <div class="carousel-container">
+              <div class="carousel">
+                <!-- <img src="{{education.img[0]}}" alt="{{ education.text }}" />
+                <img src="{{education.img[1]}}" alt="{{ education.text }}" /> -->
+              </div>
+            </div>
+            <div class="education">
+              <h4>{{ education.text }}</h4>
+              <h5>{{ education.description }}</h5>
+            </div>
+          </a>
+            <!-- <ul class="technologies-list">
+              @for (tech of education.technologist; track tech) {
+                  <li class="tech-card" [attr.data-tech]="tech">
+                      <img src="../../../assets/technologies/{{tech}}.svg" alt="{{tech}}" width="40" height="40" (error)="handleImageError($event, tech)"/>
+                  </li>
+                }
+            </ul> -->
+        </li>
+      }
+    </ul>
+  </article>

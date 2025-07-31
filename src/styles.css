@@ -5,6 +5,8 @@ body {
   font-weight: 300;
   margin: 0;
   padding: 0;
+  background-color: #191941ea;
+  color: #c8cbd9;
 }
 
 ul {
@@ -14,16 +16,20 @@ ul {
   overflow: hidden;
 }
 
-header, article {
+header {
   margin: 0;
   display: flex;
   flex-direction: column;
   min-height: 50vh;
   justify-content: center;
   align-items: start;
-  padding: 20px;
-  box-sizing:border-box;
+  padding: 2rem;
 }
+
+article {
+  max-width:1000px;
+  margin: 5rem auto;
+}  
 
 div {
   margin: 0;
@@ -34,6 +40,36 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h3 {
-    font-size: 2rem;
-    margin: 10px 20px;
+  font-size: 3rem;
+  margin-bottom: 2rem;
+}
+
+h4 {
+  font-size: 1rem;
+  margin: 1rem;
+}
+
+h5 {
+  font-size: 1rem;
+  font-weight: 300;
+  margin: 1rem;
+}
+
+@media (max-width: 640px) {
+  article {
+    padding: 2rem 1rem;
+  }
+}
+
+  
+@media (min-width: 640px) and (max-width: 1280px) {
+    article {
+        padding: 2rem 2rem;
+    }
+}
+
+@media (width >= 1280px) { 
+    article {
+        padding: 2rem 4rem;
+    }
 }

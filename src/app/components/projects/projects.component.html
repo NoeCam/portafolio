@@ -1,5 +1,5 @@
 <article class="projects">
-    <h3><img src="../../../assets/svg-titles/coding.svg" alt="Coding Icon" width="25" height="25" />&nbsp; Proyectos</h3>
+    <h3><img src="../../../assets/svg-titles/coding.svg" alt="Coding Icon" width="40" height="40" />&nbsp; Proyectos</h3>
     <ul class="projects-cards">
       @for (project of projectService.projects; track project.id) {
         <li class="project-card">
@@ -12,7 +12,7 @@
             </div>
             <div class="project-info">
               <h4>{{ project.text }}</h4>
-              <p>{{ project.description }}</p>
+              <h5>{{ project.description }}</h5>
             </div>
           </a>
             <ul class="technologies-list">
