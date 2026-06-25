@@ -15,7 +15,7 @@ export class ProjectService {
         url: "https://portafolio-hab.netlify.app/",
         img: ["../../../assets/projects/portafolio/movil.png", "../../../assets/projects/portafolio/ordenador.png"],
         description: `Proyecto propio. Aplicación web que muestra información sobre mi perfil
-        profesional, proyectos realizados y datos de contacto.`,
+        profesional, proyectos realizados y datos de contacto. Es una aplicación web responsiva. Se utiliza Angular y TypeScript.`,
         technologist: ["angular", "typescript", "html", "css"],
       },
       {
@@ -25,7 +25,7 @@ export class ProjectService {
         img: ["../../../assets/projects/bella-vita/movil.png", "../../../assets/projects/bella-vita/ordenador.png"],
         description: `Proyecto propio. Aplicación para la gestión de tratamientos cosmetológicos, 
         que permite listar los servicios disponibles y reservar citas con una cosmetóloga 
-        específica, seleccionando el día y la hora de preferencia.`,
+        específica, seleccionando el día y la hora de preferencia. Es una aplicación web responsiva. Se utiliza Next.js, Node.js, Express, Tailwind CSS y MySQL.`,
         technologist: ["nextjs", "nodejs", "express", "mysql", "tailwind"],
       },
       {
@@ -36,7 +36,7 @@ export class ProjectService {
         description: `Proyecto realizado en grupo. 
         Es una aplicación en la que hay roles de administrador y de usuario, en la que 
         los administradores pueden agregar destinos a disfrutar y donde el usuario puede 
-        reservar tantas experiencias de disfrute como quiera.`,
+        reservar tantas experiencias de disfrute como quiera. Es una aplicación web responsiva. Se utiliza React, Node.js, Express, Tailwind CSS y MySQL.`,
         technologist: ["react", "nodejs", "express", "mysql", "tailwind"],
       },
       {
@@ -45,7 +45,7 @@ export class ProjectService {
         url: "https://parejas-emojis-hab.netlify.app/",
         img: ["../../../assets/projects/memorama/movil.png", "../../../assets/projects/memorama/ordenador.png"],
         description: `Proyecto realizado en grupo. Creación de un juego de cartas online 
-        similar al juego de cartas "memorama".`,
+        similar al juego de cartas "memorama". Se utiliza HTML, CSS y JavaScript.`,
         technologist: ["html", "css", "javascript"],
       },
     ];

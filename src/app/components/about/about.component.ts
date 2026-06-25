@@ -7,5 +7,5 @@ import { Component } from '@angular/core';
   styleUrl: './about.component.css'
 })
 export class AboutComponent {
-
+  age: number = new Date().getFullYear() - 1989;
 }
